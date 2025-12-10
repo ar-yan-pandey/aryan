@@ -1,0 +1,281 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* ===== Header ===== */
+.header {
+    margin-bottom: 60px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000000;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.tagline a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+}
+
+.tagline a:hover {
+    opacity: 0.6;
+}
+
+/* ===== Social Links ===== */
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.social-links a:hover {
+    border-bottom-color: #000000;
+}
+
+/* ===== Main Content ===== */
+.content {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.content p {
+    margin-bottom: 24px;
+}
+
+.content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.content a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+}
+
+.content a:hover {
+    opacity: 0.6;
+}
+
+/* ===== CTA Button ===== */
+.cta-button {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid #000000;
+    white-space: nowrap;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Footer ===== */
+.footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
+
+.footer-links .separator {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: #999999;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profile-section {
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .social-links {
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        font-size: 15px;
+        margin-bottom: 60px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 24px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        gap: 8px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+}
+
+/* ===== Selection ===== */
+::selection {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #000000;
+    color: #ffffff;
+}
