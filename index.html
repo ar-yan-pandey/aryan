@@ -108,6 +108,35 @@
             </div>
         </footer>
     </div>
+
+    <!-- AI Chat Prank Feature -->
+    <div class="ai-widget-container">
+        <button id="ai-launcher" class="ai-launcher" aria-label="Talk to AI">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 8-9.04 9.06a2.82 2.82 0 1 0 3.98 3.98L16 12"/><circle cx="17" cy="7" r="5"/></svg>
+            <span>Talk to AI</span>
+        </button>
+
+        <div id="ai-modal" class="ai-modal hidden">
+            <div class="ai-modal-header">
+                <div class="ai-status">
+                    <div class="status-dot"></div>
+                    <span>Aryan's AI</span>
+                </div>
+                <button id="close-ai" class="close-ai">&times;</button>
+            </div>
+            <div id="ai-content" class="ai-content">
+                <div class="captcha-container">
+                    <p>Before talking to AI, confirm that you are human.</p>
+                    <button id="verify-human" class="captcha-box">
+                        <div class="checkbox"></div>
+                        <span>I'm not a robot</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
